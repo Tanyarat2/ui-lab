@@ -1,0 +1,142 @@
+{
+  "method": "Assistant-assisted browser verification using Selenium WebDriver; not a claim of an unassisted student manual run.",
+  "started_at": "2026-11-25T18:40:23.077103+07:00",
+  "timezone": "Asia/Bangkok",
+  "pizza_name": "Lab Pizza 20261125-184023",
+  "locators": {
+    "web_form_text_input": {
+      "selector": "#my-text-id",
+      "type": "css",
+      "expected": 1,
+      "actual": 1,
+      "status": "PASS"
+    },
+    "web_form_checkboxes": {
+      "selector": "input[type=checkbox]",
+      "type": "css",
+      "expected": 2,
+      "actual": 2,
+      "status": "PASS"
+    },
+    "web_form_submit": {
+      "selector": "//button[normalize-space()='Submit']",
+      "type": "xpath",
+      "expected": 1,
+      "actual": 1,
+      "status": "PASS"
+    },
+    "duplicate_calorie_id": {
+      "selector": "#floating_filled",
+      "type": "css",
+      "expected": 3,
+      "actual": 3,
+      "status": "PASS"
+    },
+    "calories_label_xpath": {
+      "selector": "//label[normalize-space()='Max Calories per Slice']/preceding-sibling::input",
+      "type": "xpath",
+      "expected": 1,
+      "actual": 1,
+      "status": "PASS"
+    },
+    "pizza_please": {
+      "selector": "button[name=\"pizza-please\"]",
+      "type": "css",
+      "expected": 1,
+      "actual": 1,
+      "status": "PASS"
+    },
+    "excluded_tools": {
+      "selector": "select",
+      "type": "css",
+      "expected": 1,
+      "actual": 1,
+      "status": "PASS"
+    },
+    "vegetarian": {
+      "selector": "input#default-checkbox",
+      "type": "css",
+      "expected": 1,
+      "actual": 1,
+      "status": "PASS"
+    },
+    "custom_name": {
+      "selector": "input#pizza-name",
+      "type": "css",
+      "expected": 1,
+      "actual": 1,
+      "status": "PASS"
+    },
+    "duplicate_pizza_name_id_after_result": {
+      "selector": "#pizza-name",
+      "type": "css",
+      "expected": 2,
+      "actual": 2,
+      "status": "PASS"
+    },
+    "custom_name_after_result": {
+      "selector": "input#pizza-name",
+      "type": "css",
+      "expected": 1,
+      "actual": 1,
+      "status": "PASS"
+    }
+  },
+  "steps": [
+    {
+      "step": 1,
+      "actual_result": "Looking to break out of your pizza routine?",
+      "status": "PASS"
+    },
+    {
+      "step": 2,
+      "actual_result": "All four advanced fields are visible; initial calories value is 1000",
+      "status": "PASS"
+    },
+    {
+      "step": 3,
+      "actual_result": "600; Knife excluded; vegetarian checked; name Lab Pizza 20261125-184023",
+      "status": "PASS"
+    },
+    {
+      "step": 4,
+      "actual_result": "Name Lab Pizza 20261125-184023; tool Scissors; calories per slice 375",
+      "status": "PASS"
+    },
+    {
+      "step": 5,
+      "actual_result": "Please log in first.",
+      "status": "PASS"
+    },
+    {
+      "step": 6,
+      "actual_result": "Signed in with public demo admin credentials; Latest pizza recommendations appeared.",
+      "status": "PASS"
+    },
+    {
+      "step": 7,
+      "actual_result": "Lab Pizza 20261125-184023 (tool=Scissors, ingredients_number=5)",
+      "status": "PASS"
+    }
+  ],
+  "chrome_version": "158.0.8127.88",
+  "chromedriver_version": "158.0.8127.88 (0cefb18236a23db1ebb6b2bc040fbbaf8cbe759e-refs/branch-heads/8127_36@{#32})",
+  "text_input_outer_html": "<input type=\"text\" class=\"form-control\" name=\"my-text\" id=\"my-text-id\" myprop=\"myvalue\">",
+  "request": {
+    "max_calories": 600,
+    "excluded_tools": [
+      "Knife"
+    ],
+    "vegetarian_checked": true,
+    "name": "Lab Pizza 20261125-184023"
+  },
+  "recommendation": {
+    "name": "Lab Pizza 20261125-184023",
+    "tool": "Scissors",
+    "calories_per_slice": 375,
+    "text": "Our recommendation:\nName: Lab Pizza 20261125-184023\nDough: Stuffed\nIngredients:\nExtra virgin olive oil\nSan Marzano tomatoes\nMozzarella di bufala\nEggplant\nPineapple\nTool: Scissors\nCalories per slice: 375"
+  },
+  "admin_line": "Lab Pizza 20261125-184023 (tool=Scissors, ingredients_number=5)",
+  "status": "PASS",
+  "elapsed_seconds": 20.358
+}
